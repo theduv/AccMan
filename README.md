@@ -1,3 +1,6 @@
+![alt text](https://github.com/theduv/accman/blob/master/public/favicon.ico?raw=true)
+
+
 # AccMan
 
 This website can be used to store literally anything, but mostly multi-account logins on any platform.
