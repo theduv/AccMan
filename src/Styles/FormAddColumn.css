@@ -1,0 +1,22 @@
+#formAddColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5vmin;
+
+  width: 100%;
+}
+
+#addInputColumn {
+  background-color: #c5c6c7;
+  border: none;
+  width: 10%;
+  margin-right: 5px;
+  height: 1.5vmin;
+  border-radius: 0.5vmin;
+  font-size: 1.7vmin;
+}
+
+.addInputPlatform::placeholder {
+  font-style: italic;
+}

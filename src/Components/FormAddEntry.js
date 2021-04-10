@@ -1,13 +1,15 @@
+import "../Styles/FormAddEntry.css";
+
 const FormAddEntry = (props) => {
   const submitNewEntry = props.submitNewEntry;
   const platformColumns = props.platformColumns;
 
   return (
-    <form onSubmit={submitNewEntry}>
+    <form onSubmit={submitNewEntry} id="formAddEntry">
       {platformColumns.map((name) => {
         return (
           <input
-            className="addInput"
+            id="addInputEntry"
             placeholder={name}
             key={"input" + name}
           ></input>

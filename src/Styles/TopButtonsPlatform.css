@@ -19,6 +19,7 @@
 }
 
 #searchStringInput::placeholder {
+  text-align: start;
   font-style: italic;
   font-size: 2vmin;
 }

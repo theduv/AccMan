@@ -37,6 +37,7 @@ body {
   border-radius: 0.5vmin;
   padding-left: 3px;
   margin-right: 3vmin;
+  display: flex;
 }
 
 .addInput::placeholder {

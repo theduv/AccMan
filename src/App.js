@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Route path="/" exact={true} component={Home} />
         <Route path="/platform/:platform" component={Platform} />
-        <Route path="/" component={PageNotFound} />
+        <Route component={PageNotFound} />
       </Router>
     </div>
   );

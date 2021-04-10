@@ -1,9 +1,11 @@
+import "../Styles/FormAddColumn.css";
+
 const FormAddColumn = (props) => {
   const submitNewColumn = props.submitNewColumn;
 
   return (
-    <form onSubmit={submitNewColumn}>
-      <input className="addInput" type="text" placeholder="Column name"></input>
+    <form onSubmit={submitNewColumn} id="formAddColumn">
+      <input id="addInputColumn" type="text" placeholder="Column name"></input>
       <button className="button validateButton" type="submit">
         ✔
       </button>
