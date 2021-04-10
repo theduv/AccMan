@@ -9,9 +9,11 @@ body {
 }
 
 .platformLink {
-  padding-top: 15px;
-  padding-left: 45px;
+  padding-top: 3vmin;
+  padding-left: 2vw;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #homeMainDiv {
@@ -23,26 +25,30 @@ body {
 #motto {
   color: rgb(165, 165, 165);
   margin-bottom: 2vmin;
-  font-size: 200%;
+  font-size: 5vmin;
   font-style: italic;
 }
 
 .addInput {
   background-color: #c5c6c7;
   border: none;
-  border-radius: 1em;
-  padding-left: 10px;
+  width: 25vmin;
+  height: 2vmin;
+  border-radius: 0.5vmin;
+  padding-left: 3px;
   margin-top: 1em;
 }
 
 .addInput::placeholder {
   font-style: italic;
+  font-size: 2vmin;
 }
 
 .button {
   border: none;
-  border-radius: 1em;
-  margin-left: 0.2em;
+  width: 3vmin;
+  height: 3vmin;
+  border-radius: 0.5vmin;
 }
 
 .cancelButton {
@@ -63,44 +69,44 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  height: 10em;
-  border: solid 2px #2d40a8;
-  background-color: #3f51b5;
+  height: 10vmin;
+  color: rgb(228, 228, 228);
+  border: solid 0.5vmin rgb(67, 151, 133);
+  background-color: rgb(81, 187, 164);
   border-radius: 0.2em;
-  width: 50em;
+  font-size: 1.7vmax;
+  width: 50vmin;
 }
 
 .primaryButton:hover {
   cursor: pointer;
 }
 
-.secondaryButton {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  height: 10em;
-  border: solid 2px #720c3f;
-  background-color: #881e53;
-  border-radius: 0.2em;
-  width: 5em;
-}
-
 .secondaryButton:hover {
   cursor: pointer;
 }
 
+.buttonDelete {
+  color: white;
+  width: 4vmin;
+  height: 4vmin;
+}
+
 .buttonLink {
+  font-size: 1.5vmin;
+
   background: none;
-  color: #5d6bb8;
-  border: solid 2px #3f51b5;
+  color: rgb(67, 151, 133);
+  border: solid 0.2vmin;
   text-transform: uppercase;
   font-weight: 500;
-  width: 45em;
-  height: 10em;
-  border-radius: 0.5em;
+  width: 45vmin;
+  height: 10vmin;
+  border-radius: 0.1vmin;
 }
 
 .buttonLink:hover {
+  border: solid 0.4vmin rgb(67, 151, 133);
   cursor: pointer;
 }
 
@@ -111,7 +117,7 @@ body {
 
 .buttonDelete {
   height: 100%;
-  padding-left: 1em;
+  padding-left: 1vmin;
   vertical-align: center;
   text-align: center;
 }

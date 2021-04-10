@@ -82,17 +82,15 @@ const Home = () => {
               {" "}
               <button className="buttonLink">{platform}</button>
             </Link>
-            <IconContext.Provider value={{ color: "white", size: "3em" }}>
-              <AiOutlineDelete
-                className="buttonDelete"
-                stroke="white"
-                strokeWidth={1}
-                onClick={() => {
-                  deletePlatform(platform);
-                }}
-                name={platform}
-              />
-            </IconContext.Provider>
+            <AiOutlineDelete
+              className="buttonDelete"
+              stroke="white"
+              strokeWidth={1}
+              onClick={() => {
+                deletePlatform(platform);
+              }}
+              name={platform}
+            />
           </div>
         );
       })}
