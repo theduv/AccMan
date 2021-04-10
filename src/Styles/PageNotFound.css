@@ -1,0 +1,10 @@
+#notFoundMainDiv {
+  height: 100%;
+  background-color: #0b0c10;
+}
+
+#errorMessage {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 5vmin;
+}
