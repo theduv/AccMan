@@ -6,12 +6,12 @@ const FormAddEntry = (props) => {
 
   return (
     <form onSubmit={submitNewEntry} id="formAddEntry">
-      {platformColumns.map((name) => {
+      {platformColumns.map((name, index) => {
         return (
           <input
-            id="addInputEntry"
+            className="addInputEntry"
             placeholder={name}
-            key={"input" + name}
+            key={index}
           ></input>
         );
       })}

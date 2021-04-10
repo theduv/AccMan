@@ -20,21 +20,24 @@ const Platform = (props) => {
   const [addEntry, setAddEntry] = useState(false);
   const [tableEditable, setTableEditable] = useState(false);
 
-  useEffect(() => {
-    const entries = storageEntries;
+  useEffect(
+    (storageEntries) => {
+      const entries = storageEntries;
 
-    if (!storageEntries || storageEntries === null) {
-      setPlatformEntries([]);
-      return;
-    }
-    const newArray = entries.filter((entry) => {
-      for (let i = 0; i < entry.length; i++)
-        if (entry[i].includes(filter)) return true;
-      return false;
-    });
+      if (!storageEntries || storageEntries === null) {
+        setPlatformEntries([]);
+        return;
+      }
+      const newArray = entries.filter((entry) => {
+        for (let i = 0; i < entry.length; i++)
+          if (entry[i].includes(filter)) return true;
+        return false;
+      });
 
-    setPlatformEntries(newArray);
-  }, [filter, storageEntries]);
+      setPlatformEntries(newArray);
+    },
+    [filter]
+  );
 
   const submitNewColumn = (e) => {
     e.preventDefault();

@@ -84,7 +84,7 @@ const PlatformTable = (props) => {
               <th
                 contentEditable={tableEditable}
                 onInput={(e) => onInputColumn(index, e)}
-                key={name}
+                key={index}
                 className="tableColumnField"
               >
                 {name}
