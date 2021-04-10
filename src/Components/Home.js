@@ -57,7 +57,7 @@ const Home = () => {
         </button>
       </div>
       {addingPlatform && (
-        <form onSubmit={onSubmitForm}>
+        <form onSubmit={onSubmitForm} id="formAddPlatform">
           <input
             className="addInput"
             type="text"

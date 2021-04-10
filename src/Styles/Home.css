@@ -32,11 +32,11 @@ body {
 .addInput {
   background-color: #c5c6c7;
   border: none;
-  width: 25vmin;
+  width: 30vmin;
   height: 2vmin;
   border-radius: 0.5vmin;
   padding-left: 3px;
-  margin-top: 1em;
+  margin-right: 3vmin;
 }
 
 .addInput::placeholder {
@@ -46,18 +46,34 @@ body {
 
 .button {
   border: none;
-  width: 3vmin;
-  height: 3vmin;
+  width: 1.5vmax;
+  height: 1.5vmax;
   border-radius: 0.5vmin;
 }
 
+#formAddPlatform {
+  display: flex;
+  align-items: center;
+  padding-top: 2vmin;
+  height: 3vmin;
+  width: 50vmin;
+}
+
 .cancelButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 0.9em;
+  font-size: 1.8vmin;
+  margin-right: 1vmin;
   background-color: rgb(97, 42, 42);
 }
 
 .validateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8vmin;
   background-color: rgb(111, 180, 111);
 }
 
@@ -116,8 +132,6 @@ body {
 }
 
 .buttonDelete {
-  height: 100%;
-  padding-left: 1vmin;
   vertical-align: center;
   text-align: center;
 }
