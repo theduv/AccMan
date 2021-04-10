@@ -1,0 +1,121 @@
+#homeMainDiv {
+  height: 100%;
+  background-color: #0b0c10;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.platformLink {
+  padding-top: 15px;
+  padding-left: 45px;
+  display: flex;
+}
+
+#homeMainDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#motto {
+  color: rgb(165, 165, 165);
+  margin-bottom: 1em;
+  font-size: 200%;
+  font-style: italic;
+}
+
+.addInput {
+  background-color: #c5c6c7;
+  border: none;
+  border-radius: 1em;
+  padding-left: 10px;
+  margin-top: 1em;
+}
+
+.addInput::placeholder {
+  font-style: italic;
+}
+
+.button {
+  border: none;
+  border-radius: 1em;
+  margin-left: 0.2em;
+}
+
+.cancelButton {
+  color: white;
+  font-size: 0.9em;
+  background-color: rgb(97, 42, 42);
+}
+
+.validateButton {
+  background-color: rgb(111, 180, 111);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.primaryButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  height: 10em;
+  border: solid 2px #2d40a8;
+  background-color: #3f51b5;
+  border-radius: 0.2em;
+  width: 50em;
+}
+
+.primaryButton:hover {
+  cursor: pointer;
+}
+
+.secondaryButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  height: 10em;
+  border: solid 2px #720c3f;
+  background-color: #881e53;
+  border-radius: 0.2em;
+  width: 5em;
+}
+
+.secondaryButton:hover {
+  cursor: pointer;
+}
+
+.buttonLink {
+  background: none;
+  color: #5d6bb8;
+  border: solid 2px #3f51b5;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 45em;
+  height: 10em;
+  border-radius: 0.5em;
+}
+
+.buttonLink:hover {
+  cursor: pointer;
+}
+
+#validateSubmit {
+  font-weight: bold;
+  color: white;
+}
+
+.buttonDelete {
+  height: 100%;
+  padding-left: 1em;
+  vertical-align: center;
+  text-align: center;
+}
+
+.buttonDelete:hover {
+  cursor: pointer;
+}

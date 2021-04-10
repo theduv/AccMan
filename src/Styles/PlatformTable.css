@@ -1,0 +1,23 @@
+.tableColumnField {
+  background-color: #1f2833;
+  border: solid 1px rgb(141, 133, 133);
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+}
+
+.tableField {
+  text-align: center;
+  background-color: #45a29e;
+  border: solid 1px #17c7be;
+  border-radius: 2px;
+}
+
+.tableRow {
+  background-color: #3a6967;
+}
+
+#platformTable {
+  border: 1px solid rgb(60, 142, 153);
+  border-radius: 3px;
+}
