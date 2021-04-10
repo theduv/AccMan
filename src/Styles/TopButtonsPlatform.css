@@ -1,0 +1,62 @@
+#topButtons {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100vmin;
+  align-content: center;
+}
+
+#topButtons > button {
+  margin-left: 1vmin;
+  margin-right: 1vmin;
+}
+
+#searchStringInput {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20vmin;
+  height: 5vmin;
+}
+
+#searchStringInput::placeholder {
+  font-style: italic;
+  font-size: 2vmin;
+}
+
+#editTableButton {
+  background: rgb(97, 160, 212);
+  border: 0.5vmin solid rgb(56, 116, 165);
+  border-radius: 0.5vmin;
+  height: 8vmin;
+  width: 8vmin;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconEdit {
+  width: 5vmin;
+  height: 5vmin;
+  color: rgb(233, 233, 233);
+}
+
+#editTableButton:hover {
+  cursor: pointer;
+}
+
+.topPrimaryButton {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2vmin;
+  border-radius: 0.3vmin;
+  width: 30vmin;
+  color: rgb(228, 228, 228);
+  border: solid 0.5vmin rgb(67, 151, 133);
+  height: 10vmin;
+  background-color: rgb(81, 187, 164);
+}
+
+.topPrimaryButton:hover {
+  cursor: pointer;
+}

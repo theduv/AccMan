@@ -76,7 +76,7 @@ const PlatformTable = (props) => {
               Delete
             </th>
           )}
-          <th className="tableColumnField" style={{ width: "25px" }}>
+          <th className="tableColumnField" style={{ width: "2vmin" }}>
             #
           </th>
           {platformColumns.map((name, index) => {

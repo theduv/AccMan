@@ -1,4 +1,7 @@
 import { AiOutlineEdit } from "react-icons/ai";
+import { IconContext } from "react-icons/lib";
+
+import "../Styles/TopButtonsPlatform.css";
 
 const TopButtonsPlatform = (props) => {
   const setFilter = props.setFilter;
@@ -32,16 +35,21 @@ const TopButtonsPlatform = (props) => {
 
   return (
     <div id="topButtons">
-      <button className="primaryButton" onClick={toggleAddColumn}>
+      <div id="editTableButton" onClick={onClickEdit}>
+        <AiOutlineEdit className="iconEdit" />
+      </div>
+      <button className="topPrimaryButton" onClick={toggleAddColumn}>
         Add a column
       </button>
-      <button className="primaryButton" onClick={toggleAddEntry}>
+      <button className="topPrimaryButton" onClick={toggleAddEntry}>
         Add an entry
       </button>
-      <button className="secondaryButton" onClick={onClickEdit}>
-        <AiOutlineEdit />
-      </button>
-      <input type="text" onChange={modifyFilter} placeholder="Search"></input>
+      <input
+        id="searchStringInput"
+        type="text"
+        onChange={modifyFilter}
+        placeholder="Search"
+      ></input>
     </div>
   );
 };

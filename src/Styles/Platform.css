@@ -1,26 +1,15 @@
 #topTools {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 2vmin;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-#topButtons {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-#topButtons > button {
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
 .emptyTable {
   color: rgb(201, 200, 200);
   text-align: center;
+  font-size: 3vmin;
 }
 
 #mainDivPlatform {
@@ -57,7 +46,7 @@
 
 #platformName {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 2em;
+  font-size: 8vmin;
   color: #c5c6c7;
   width: 33%;
   text-align: center;
@@ -80,7 +69,6 @@
 }
 
 #platformTable {
-  width: 80rem;
-  margin-top: 80em;
+  width: 80vw;
   margin: auto;
 }

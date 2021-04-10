@@ -1,18 +1,20 @@
 .tableColumnField {
   background-color: #1f2833;
-  border: solid 1px rgb(141, 133, 133);
-  border-radius: 2px;
+  border: solid 0.2vmin rgb(141, 133, 133);
+  border-radius: 0.5vmin;
   color: white;
   text-align: center;
+  width: 8vmin;
+  height: 2vmin;
+  font-size: 3vmin;
 }
 
 .tableField {
+  height: 2vmin;
+  width: 8vmin;
   text-align: center;
   background-color: #45a29e;
-  border: solid 1px #17c7be;
-  border-radius: 2px;
-}
-
-.tableRow {
-  background-color: #3a6967;
+  border: solid 0.2vmin #17c7be;
+  font-size: 3vmin;
+  border-radius: 0.5vmin;
 }
