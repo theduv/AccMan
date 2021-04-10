@@ -75,25 +75,27 @@ const Home = () => {
           ></input>
         </form>
       )}
-      {platforms.map((platform) => {
-        return (
-          <div className="platformLink" key={platform}>
-            <Link to={`/platform/${encodeURI(platform)}`}>
-              {" "}
-              <button className="buttonLink">{platform}</button>
-            </Link>
-            <AiOutlineDelete
-              className="buttonDelete"
-              stroke="white"
-              strokeWidth={1}
-              onClick={() => {
-                deletePlatform(platform);
-              }}
-              name={platform}
-            />
-          </div>
-        );
-      })}
+      <div id="platformList">
+        {platforms.map((platform) => {
+          return (
+            <div className="platformLink" key={platform}>
+              <Link to={`/platform/${encodeURI(platform)}`}>
+                {" "}
+                <button className="buttonLink">{platform}</button>
+              </Link>
+              <AiOutlineDelete
+                className="buttonDelete"
+                stroke="white"
+                strokeWidth={1}
+                onClick={() => {
+                  deletePlatform(platform);
+                }}
+                name={platform}
+              />
+            </div>
+          );
+        })}
+      </div>
       <Footer />
     </div>
   );

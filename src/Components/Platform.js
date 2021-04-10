@@ -83,7 +83,7 @@ const Platform = (props) => {
   };
 
   return (
-    <div id="mainDivPlatform">
+    <div id="platformMainDiv">
       <div id="headDiv">
         <Header />
         <span id="platformName">{platform}</span>

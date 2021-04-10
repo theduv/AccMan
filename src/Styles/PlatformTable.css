@@ -1,3 +1,9 @@
+#platformTable {
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 17vmin;
+}
+
 .tableColumnField {
   background-color: #1f2833;
   border: solid 0.2vmin rgb(141, 133, 133);

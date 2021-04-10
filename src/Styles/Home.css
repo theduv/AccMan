@@ -1,12 +1,19 @@
 #homeMainDiv {
-  height: auto;
+  height: 100%;
   background-color: #0b0c10;
-  padding-bottom: 18vmin;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 html,
 body {
-  height: auto;
+  height: 100%;
+}
+
+#platformList {
+  padding-bottom: 18vmin;
 }
 
 .platformLink {
@@ -15,12 +22,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#homeMainDiv {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 #motto {

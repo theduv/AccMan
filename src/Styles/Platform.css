@@ -12,8 +12,9 @@
   font-size: 3vmin;
 }
 
-#mainDivPlatform {
+#platformMainDiv {
   height: 100%;
+  overflow: scroll;
   background-color: #0b0c10;
 }
 
@@ -66,9 +67,4 @@
 
 .submitButton:hover {
   background-color: rgb(146, 61, 146);
-}
-
-#platformTable {
-  width: 80vw;
-  margin: auto;
 }
