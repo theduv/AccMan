@@ -64,15 +64,17 @@ const Home = () => {
             onKeyDown={onInputHandler}
             placeholder="Platform name"
           ></input>
-          <button className="cancelButton button" onClick={toggleAddPlatform}>
-            ✖
-          </button>
-          <input
-            type="submit"
-            id="validateSubmit"
-            className="validateButton button"
-            value="✔"
-          ></input>
+          <div id="formButtons">
+            <button className="cancelButton button" onClick={toggleAddPlatform}>
+              ✖
+            </button>
+            <input
+              type="submit"
+              id="validateSubmit"
+              className="validateButton button"
+              value="✔"
+            ></input>
+          </div>
         </form>
       )}
       <div id="platformList">

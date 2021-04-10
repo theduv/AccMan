@@ -1,3 +1,7 @@
+html,
+body {
+  height: 100%;
+}
 #homeMainDiv {
   height: 100%;
   background-color: #0b0c10;
@@ -5,11 +9,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 #platformList {
@@ -32,12 +31,14 @@ body {
 }
 
 .addInput {
-  background-color: #c5c6c7;
-  border: none;
+  background-color: rgb(169, 216, 255);
+  border: solid 0.3vmin rgb(56, 116, 165);
   width: 30vmin;
   height: 2vmin;
   border-radius: 0.5vmin;
   padding-left: 3px;
+  color: black;
+  font-size: 2vmin;
   margin-right: 3vmin;
   display: flex;
 }
@@ -45,6 +46,11 @@ body {
 .addInput::placeholder {
   font-style: italic;
   font-size: 2vmin;
+}
+
+#formButtons {
+  display: flex;
+  flex-direction: row;
 }
 
 .button {
@@ -56,7 +62,8 @@ body {
 
 #formAddPlatform {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding-top: 2vmin;
   height: 3vmin;
   width: 50vmin;
@@ -69,7 +76,7 @@ body {
   color: white;
   font-size: 1.8vmin;
   margin-right: 1vmin;
-  background-color: rgb(97, 42, 42);
+  background-color: rgb(133, 58, 58);
 }
 
 .validateButton {
@@ -98,6 +105,7 @@ body {
 }
 
 .primaryButton:hover {
+  background-color: rgb(67, 151, 133);
   cursor: pointer;
 }
 
