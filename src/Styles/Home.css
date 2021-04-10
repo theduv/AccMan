@@ -1,11 +1,12 @@
 #homeMainDiv {
-  height: 100%;
+  height: auto;
   background-color: #0b0c10;
+  padding-bottom: 18vmin;
 }
 
 html,
 body {
-  height: 100%;
+  height: auto;
 }
 
 .platformLink {
@@ -91,7 +92,7 @@ body {
   border: solid 0.5vmin rgb(67, 151, 133);
   background-color: rgb(81, 187, 164);
   border-radius: 0.2em;
-  font-size: 1.7vmax;
+  font-size: 3vmin;
   width: 50vmin;
 }
 
@@ -111,7 +112,6 @@ body {
 
 .buttonLink {
   font-size: 2.4vmin;
-
   background: none;
   color: rgb(67, 151, 133);
   border: solid 0.2vmin;
@@ -139,4 +139,17 @@ body {
 
 .buttonDelete:hover {
   cursor: pointer;
+}
+#stickOnBottom {
+  font-size: 2.4vmin;
+  background: none;
+  border: solid 0.2vmin;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 45vmin;
+  height: 10vmin;
+  border-radius: 0.1vmin;
+  padding-top: 3vmin;
+  padding-left: 2vw;
+  display: flex;
 }
