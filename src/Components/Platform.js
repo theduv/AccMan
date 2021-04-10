@@ -42,6 +42,17 @@ const Platform = (props) => {
     const name = e.target.children[0].value;
 
     if (name === "") return;
+    if (storageEntries) {
+      const newArrayEntries = storageEntries.map((entry) => {
+        return [...entry, ""];
+      });
+      localStorage.setItem(
+        `${platform};entries`,
+        JSON.stringify(newArrayEntries)
+      );
+      setPlatformEntries(newArrayEntries);
+    }
+
     setPlatformColumns([...platformColumns, name]);
     localStorage.setItem(
       `${platform};columns`,
