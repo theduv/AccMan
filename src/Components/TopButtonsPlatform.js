@@ -1,5 +1,4 @@
 import { AiOutlineEdit } from "react-icons/ai";
-import { IconContext } from "react-icons/lib";
 
 import "../Styles/TopButtonsPlatform.css";
 
