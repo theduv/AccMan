@@ -1,5 +1,4 @@
-![alt text](https://github.com/theduv/accman/blob/master/public/favicon.ico?raw=true | width=50)
-
+<img src="https://github.com/theduv/accman/blob/master/public/favicon.ico?raw=true"  width=70 />
 
 # AccMan
 
