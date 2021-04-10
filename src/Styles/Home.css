@@ -84,6 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.8vmin;
+  color: white;
   background-color: rgb(111, 180, 111);
 }
 
@@ -134,11 +135,6 @@ body {
 .buttonLink:hover {
   border: solid 0.4vmin rgb(67, 151, 133);
   cursor: pointer;
-}
-
-#validateSubmit {
-  font-weight: bold;
-  color: white;
 }
 
 .buttonDelete {

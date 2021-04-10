@@ -70,7 +70,6 @@ const Home = () => {
             </button>
             <input
               type="submit"
-              id="validateSubmit"
               className="validateButton button"
               value="✔"
             ></input>
