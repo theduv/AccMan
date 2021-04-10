@@ -1,0 +1,12 @@
+#githubIcon {
+  color: white;
+  width: 15vmin;
+  height: 15vmin;
+}
+
+#divFooter {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}

@@ -5,6 +5,7 @@ import PlatformTable from "./PlatformTable";
 import FormAddColumn from "./FormAddColumn";
 import TopButtonsPlatform from "./TopButtonsPlatform";
 import FormAddEntry from "./FormAddEntry";
+import Footer from "./Footer";
 
 const Platform = (props) => {
   const platform = props.match.params.platform;
@@ -125,6 +126,7 @@ const Platform = (props) => {
           platform={platform}
         />
       )}
+      <Footer />
     </div>
   );
 };

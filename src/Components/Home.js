@@ -3,6 +3,7 @@ import { AiOutlineDelete } from "react-icons/ai";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Footer from "./Footer";
 
 const Home = () => {
   const localStoragePlatforms = JSON.parse(localStorage.getItem("platforms"));
@@ -93,6 +94,7 @@ const Home = () => {
           </div>
         );
       })}
+      <Footer />
     </div>
   );
 };
