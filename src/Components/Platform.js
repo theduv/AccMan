@@ -19,24 +19,21 @@ const Platform = (props) => {
   const [addEntry, setAddEntry] = useState(false)
   const [tableEditable, setTableEditable] = useState(false)
 
-  useEffect(
-    (storageEntries) => {
-      const entries = storageEntries
+  useEffect(() => {
+    const entries = storageEntries
 
-      if (!storageEntries || storageEntries === null) {
-        setPlatformEntries([])
-        return
-      }
-      const newArray = entries.filter((entry) => {
-        for (let i = 0; i < entry.length; i++)
-          if (entry[i].includes(filter)) return true
-        return false
-      })
+    if (!storageEntries || storageEntries === null) {
+      setPlatformEntries([])
+      return
+    }
+    const newArray = entries.filter((entry) => {
+      for (let i = 0; i < entry.length; i++)
+        if (entry[i].includes(filter)) return true
+      return false
+    })
 
-      setPlatformEntries(newArray)
-    },
-    [filter]
-  )
+    setPlatformEntries(newArray)
+  }, [filter])
 
   const submitNewColumn = (e) => {
     e.preventDefault()
@@ -108,11 +105,11 @@ const Platform = (props) => {
       </div>
       {platformEntries.length === 0 ? (
         filter === '' ? (
-          <div className='emptyTable'>String not found in your data.</div>
-        ) : (
           <div className='emptyTable'>
             Click on the "add an entry" button to display the Table.
           </div>
+        ) : (
+          <div className='emptyTable'>String not found in your data.</div>
         )
       ) : (
         <PlatformTable
