@@ -1,95 +1,93 @@
-import "../Styles/Platform.css";
-import { useState, useEffect } from "react";
-import Header from "./Header.js";
-import PlatformTable from "./PlatformTable";
-import FormAddColumn from "./FormAddColumn";
-import TopButtonsPlatform from "./TopButtonsPlatform";
-import FormAddEntry from "./FormAddEntry";
-import Footer from "./Footer";
+import '../Styles/Platform.css'
+import { useState, useEffect } from 'react'
+import Header from './Header.js'
+import PlatformTable from './PlatformTable'
+import FormAddColumn from './FormAddColumn'
+import TopButtonsPlatform from './TopButtonsPlatform'
+import FormAddEntry from './FormAddEntry'
+import Footer from './Footer'
 
 const Platform = (props) => {
-  const platform = props.match.params.platform;
-  const [filter, setFilter] = useState("");
-  const storageEntries = JSON.parse(
-    localStorage.getItem(`${platform};entries`)
-  );
+  const platform = props.match.params.platform
+  const [filter, setFilter] = useState('')
+  const storageEntries = JSON.parse(localStorage.getItem(`${platform};entries`))
   const [platformColumns, setPlatformColumns] = useState(
     JSON.parse(localStorage.getItem(`${platform};columns`)) ?? []
-  );
-  const [platformEntries, setPlatformEntries] = useState(storageEntries ?? []);
-  const [addColumn, setAddColumn] = useState(false);
-  const [addEntry, setAddEntry] = useState(false);
-  const [tableEditable, setTableEditable] = useState(false);
+  )
+  const [platformEntries, setPlatformEntries] = useState(storageEntries ?? [])
+  const [addColumn, setAddColumn] = useState(false)
+  const [addEntry, setAddEntry] = useState(false)
+  const [tableEditable, setTableEditable] = useState(false)
 
   useEffect(
     (storageEntries) => {
-      const entries = storageEntries;
+      const entries = storageEntries
 
       if (!storageEntries || storageEntries === null) {
-        setPlatformEntries([]);
-        return;
+        setPlatformEntries([])
+        return
       }
       const newArray = entries.filter((entry) => {
         for (let i = 0; i < entry.length; i++)
-          if (entry[i].includes(filter)) return true;
-        return false;
-      });
+          if (entry[i].includes(filter)) return true
+        return false
+      })
 
-      setPlatformEntries(newArray);
+      setPlatformEntries(newArray)
     },
     [filter]
-  );
+  )
 
   const submitNewColumn = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const name = e.target.children[0].value;
+    const name = e.target.children[0].value
 
-    if (name === "") return;
+    if (name === '') return
     if (storageEntries) {
       const newArrayEntries = storageEntries.map((entry) => {
-        return [...entry, ""];
-      });
+        return [...entry, '']
+      })
       localStorage.setItem(
         `${platform};entries`,
         JSON.stringify(newArrayEntries)
-      );
-      setPlatformEntries(newArrayEntries);
+      )
+      setPlatformEntries(newArrayEntries)
     }
 
-    setPlatformColumns([...platformColumns, name]);
+    setPlatformColumns([...platformColumns, name])
     localStorage.setItem(
       `${platform};columns`,
       JSON.stringify([...platformColumns, name])
-    );
-    e.target.children[0].value = "";
-  };
+    )
+    e.target.children[0].value = ''
+  }
 
   const submitNewEntry = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const children = [...e.target.children]
       .slice(0, -1)
-      .map((child) => child.value);
+      .map((child) => child.value)
     localStorage.setItem(
       `${platform};entries`,
       JSON.stringify([...platformEntries, children])
-    );
-    setPlatformEntries([...platformEntries, children]);
-    const toClear = [...e.target.children];
+    )
+    setPlatformEntries([...platformEntries, children])
+    const toClear = [...e.target.children]
     toClear.forEach((elem) => {
-      elem.value = "";
-    });
-    e.target.children[0].focus();
-  };
+      elem.value = ''
+    })
+    e.target.children[0].focus()
+  }
 
   return (
-    <div id="platformMainDiv">
-      <div id="headDiv">
+    <div id='platformMainDiv'>
+      <div id='headDiv'>
         <Header />
-        <span id="platformName">{platform}</span>
-        <div id="hiddenDiv"></div>
+        <span id='platformName'>{platform}</span>
+        <div id='hiddenDiv'></div>
       </div>
-      <div id="topTools">
+      <div id='topTools'>
         <TopButtonsPlatform
           filter={filter}
           setFilter={setFilter}
@@ -109,12 +107,12 @@ const Platform = (props) => {
         {addColumn && <FormAddColumn submitNewColumn={submitNewColumn} />}
       </div>
       {platformEntries.length === 0 ? (
-        filter === "" ? (
-          <div className="emptyTable">
+        filter === '' ? (
+          <div className='emptyTable'>String not found in your data.</div>
+        ) : (
+          <div className='emptyTable'>
             Click on the "add an entry" button to display the Table.
           </div>
-        ) : (
-          <div className="emptyTable">String not found in your data.</div>
         )
       ) : (
         <PlatformTable
@@ -128,7 +126,7 @@ const Platform = (props) => {
       )}
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Platform;
+export default Platform
